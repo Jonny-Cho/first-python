@@ -17,15 +17,35 @@ content3 = "창업은 쉬워요"
 view_count3 = 0
 
 #### Article class
+# class Article:
+#     title = "개발"
+#     author = "마르코"
+#     content = "개발은 쉬워요"
+#     view_count = 0
+
+# article1 = Article()
+# print(article1.title)
+# article2 = Article()
+# article2.title = "코칭"
+# print(article1.title)
+# print(article2.title)
+
+#### Article class with __init__
 class Article:
-    title = "개발"
     author = "마르코"
-    content = "개발은 쉬워요"
     view_count = 0
 
-article1 = Article()
-print(article1.title)
-article2 = Article()
-article2.title = "코칭"
-print(article1.title)
-print(article2.title)
+    def __init__(self, title, content):
+        self.title = title
+        self.content = content
+
+    def read(self):
+        self.view_count = self.view_count + 1
+
+article1 = Article("개발", "개발은 쉬워요")
+article2 = Article("코칭", "코칭은 쉬워요")
+article3 = Article("창업", "창업은 쉬워요")
+
+print(article1.view_count)
+article1.read()
+print(article1.view_count)
