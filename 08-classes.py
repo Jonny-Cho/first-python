@@ -15,3 +15,17 @@ title3 = "창업"
 author3 = "마르코"
 content3 = "창업은 쉬워요"
 view_count3 = 0
+
+#### Article class
+class Article:
+    title = "개발"
+    author = "마르코"
+    content = "개발은 쉬워요"
+    view_count = 0
+
+article1 = Article()
+print(article1.title)
+article2 = Article()
+article2.title = "코칭"
+print(article1.title)
+print(article2.title)
