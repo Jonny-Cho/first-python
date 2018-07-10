@@ -7,6 +7,6 @@ class Human:
 class Workmate(Human):
     position = "대리"
 
-human1 = Workmate("조준희", "27", "남")
+human1 = Workmate("Jonny", "27", "Male")
 print(human1.name)
 print(human1.position)
