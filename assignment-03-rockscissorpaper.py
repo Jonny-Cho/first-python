@@ -13,10 +13,7 @@
 import random
 
 user_choice = input("가위, 바위, 보 중 하나를 입력해 주세요")
-computer_choice = ["가위", "바위", "보"]
-
-print(user_choice)
-print(random.choice(computer_choice))
+computer_choice = random.choice(["가위", "바위", "보"])
 
 #Result
 
