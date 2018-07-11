@@ -5,8 +5,9 @@ class Human:
         self.gender = gender
 
 class Workmate(Human):
-    position = "대리"
+        def __init__(self, name, age, gender, position):
+            super().__init__(name, age, gender)
+            self.position = position
 
-human1 = Workmate("Jonny", "27", "Male")
-print(human1.name)
-print(human1.position)
+human1 = Workmate("Jonny", 27, "Male", "대리")
+print(human1.__dict__)
